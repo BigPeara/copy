@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://m.yokong.com/book/20230/5886001/ -->
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>js复制图片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+    <button class="btn" data-clipboard-target="#selectable">asasaasdasdasdasd</button>
+    <!-- Trigger -->
+    <div id="selectable">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAxlBMVEX///8AAAD////////////////////////////////////////////////////////////////k1jPh0h3i0yTj1Szh0Rng0BXj1Cjg0BLk1jD//vr8+uPi0iD+/vb+/fH9/Oz07qb6+Njm2Dv8++fx6Y/o3FDn2kXm2UDezQT7+d749Mnz7KDy65rx6pTw6Int5Hjt43Ln20r388H28rz18LPs4Wnr4GTq313p3VX59tH28bb0763v54Ts4m359c3u5X3p3lnyTmlzAAAAEXRSTlPxAO3LiEAhvt27+9hhW0hG3g2+zAMAAAMWSURBVFjDrdnXduowEAVQX1JIT2YkS+4Fg2mh9xKS/P9PXRsCDgnFsec88bSXBkker7Hyb5uny9ubgpIhhZvby6cdswUfLiBXLh72wOsi5E7xOgGfC0CQwvMWvLoDktxdbcBrBYiiXK/BCyDLRQw+AmEeI/CeErz/p1wBaa6US1rwUrmlBYvKCy14oxRowYJy9FSPxpOK9fezfRSs6FLo6JOBQ6khIpddkwicCYyj6jOXBJxzAzeRVYsCbDPcRtQsAnAsMBGrXn4wtDGJDM28oFfj+C36Ki/YCLTvoKG3coIl3ANRY01aEFnNJSk5if6RC7Rq/Aeosvc8oFv9CSIL84AwY/gz0ie5KUk4ejnAN4a/ondygL79G+RGOTvY5GioqmrsL7GSHfSwzjRV40JyNVli4GYG4a3nD5qDUesjVNmufPmaHUxSqvQZ29Ruh9lBd1jp9rqVUSP6bS5DyWPQsAcZwVIXbbaOMW158a4HMv4vRS8b+KpJbXeHRdCJlul1BUfUsJwFbOt7N1mT+BY5I2SIItkWJxWY9Pg9UscIaoTSYFPYpuWnBJ0qw1/h8rMEMNE1tQFf6UxSgkuBhyLUaJE9Xd/V3I43yHPOg+PDIGpybMJHfVdzpR2f//lZ0OnbeDiG3rdgJawtOAAoTd2zoBVwPBaBDZi1YR2zHVmdVzgLlmvHQWSqBb65Oft+fP7hPGhGJZ8QAwc24OIdzE4pBQgrgSciP7/+6oUJyyGkAUfsOJe8lZTeoblIe7DtUyJfX2ezaVrDtFdvqRunxPUSy5Y5T/9wmOinQDGJV2g6ZnrQq8oToFaNFjgw//Q8tKonquYzr2XXnD++20zE0Z1Rw7DOmn/uKX5fCm4cFus4z9D1nMUqYLqtqcaBZ0TGNuouKtNAZVLYXFOjaHHTV+XYzdOXvabf6U37ARoG1lYzg4tO9kafxPHKllWGYU1qS8gLJhnwenUOdKBfr3ddoAPbdRwB0IFm782BFCD9EOOFFnxRirRgkXxURT5Mox73kQ8kqUem5ENd6rEz/WCcfnRP/3GB/PPHf819ssEKvUV3AAAAAElFTkSuQmCC"
+        />
+        <div class="">hadsjkaskjasd</div>
+        <img src="http://textimg.mxs.com/246a6572dfd9458219de15d685219f07c033189eb5797aa6cd3a1e13b3764a40.jpg" />
+    </div>
+    <!-- <div id="selectable">
+        <img src="https://open.weixin.qq.com/qr/code?username=tttcbe" alt="Copy to clipboard">
+    </div> -->
+    <script src="jquery.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script type="text/javascript">
+        new ClipboardJS('.btn', {
+            html: function(trigger) {
+                return trigger.getAttribute('aria-label');
+            }
+        });
+    </script>
+</body>
+
+</html>
